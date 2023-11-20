@@ -1,0 +1,420 @@
+@use "./variables.scss";
+@use "sass:color";
+@use "sass:math";
+@import "./responsive.scss";
+
+// Components
+@keyframes Loading {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+
+@keyframes BGLoading {
+  0% {
+    background-color: variables.$senary;
+  }
+  50% {
+    background-color: variables.$septenary;
+  }
+  100% {
+    background-color: variables.$senary;
+  }
+}
+.PageLoading {
+  position: absolute;
+  left: 0%;
+  right: 100%;
+  height: 2px;
+  background-color: variables.$accent;
+  animation: Loading 1.7s infinite;
+  box-shadow: 0 0 5px 0 variables.$senary;
+}
+
+.Button {
+  .small {
+    font-size: 0.95rem;
+  }
+  .medium {
+    font-size: 1rem;
+  }
+  .big {
+    font-size: 1.05rem;
+  }
+
+  .margin-right {
+    margin-right: 0.5rem;
+  }
+
+  .margin-left {
+    margin-left: 0.5rem;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  label {
+    cursor: pointer;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 0.7em;
+    box-sizing: border-box;
+    display: inline-flex;
+    border-radius: variables.$rounded;
+    min-width: 2.5em;
+    min-height: 2.5em;
+    position: relative;
+    font-weight: 500;
+  }
+
+  label:active {
+    transform: scale(0.95);
+    transition: 0.1s linear;
+  }
+
+  svg {
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+  }
+
+  .contained.primary {
+    background-color: variables.$fixed-accent;
+    color: white;
+    path {
+      fill: white;
+    }
+  }
+
+  div {
+    position: absolute;
+    background-color: variables.$accent;
+    height: 2px;
+    width: 0%;
+    bottom: 0.25em;
+    left: 0.25em;
+    z-index: -1;
+    border-radius: 0;
+    transition: 0.4s cubic-bezier(0.65, 0, 0.93, 0.73);
+  }
+  
+  .text:hover {
+    div {
+      width: calc(100% - 0.5em);
+    }
+  }
+
+  .contained.secondary {
+    background-color: variables.$septenary;
+    color: variables.$primary;
+  }
+  .contained.secondary:hover {
+    background-color: variables.$senary;
+    color: variables.$primary;
+  }
+
+  .outlined.primary {
+    border: 1px solid variables.$accent;
+    color: variables.$accent;
+    path {
+      color: variables.$accent;
+    }
+  }
+  .outlined.primary:hover {
+    background-color: variables.$accent-10;
+  }
+
+  .outlined.secondary {
+    border: 1px solid variables.$primary-15;
+    color: variables.$primary;
+  }
+
+  .outlined.secondary:hover {
+    background-color: variables.$accent-10;
+  }
+
+  .icon {
+    svg {
+      margin: 0;
+    }
+  }
+
+  .iconLeft {
+    svg {
+      margin-right: 0.25em;
+    }
+  }
+
+  .iconRight {
+    svg {
+      margin-left: 0.25em;
+    }
+  }
+}
+div .Button:first-child {
+  margin-left: 0;
+}
+div .Button:last-child {
+  margin-right: 0;
+}
+.active {
+  .Button {
+    .text {
+      div {
+        width: calc(100% - 0.5em);
+      }
+    }
+  }
+  .Logo {
+    svg {
+      stroke: variables.$accent;
+    }
+  }
+}
+.Navbar {
+  width: 100%;
+  height: 70px;
+
+  .navbar.shadow {
+    box-shadow: 0 0 5px 0 variables.$primary-15;
+    background-color: variables.$background-80;
+  }
+
+  .navbar {
+    backdrop-filter: blur(30px);
+    position: fixed;
+    height: 70px;
+    top: -70px;
+    width: 100%;
+    z-index: 10;
+
+    .container {
+      height: 100%;
+
+      .row {
+        height: 100%;
+        align-items: center;
+      }
+    }
+  }
+  .navbar.visible {
+    top: 0;
+  }
+}
+.Logo {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 2rem;
+  transition: none;
+  @include respond-to("xs") {
+    margin: 0 1rem;
+  }
+  @include respond-to("s") {
+    margin: 0 1.5rem;
+  }
+  @include respond-to("m") {
+    margin: 0 2rem;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+    stroke: variables.$primary;
+    transition: none;
+    outline: none;
+  }
+
+  svg:hover {
+    stroke: variables.$accent;
+  }
+  path {
+    transition: none;
+  }
+}
+.Card {
+  margin: 4rem 0;
+
+  .image {
+    box-sizing: border-box;
+    border-radius: variables.$smallRadius;
+    background-size: cover;
+    position: relative;
+    border: 1px solid variables.$senary;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+    height: 0;
+    padding-top: 70%;
+    width: 100%;
+  }
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 variables.$quinary;
+  }
+
+  .body {
+    padding-left: 2rem !important;
+    box-sizing: border-box;
+    p {
+      margin: 0;
+    }
+    strong {
+      font-weight: 700;
+      margin-right: 0.25rem;
+    }
+    .role {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.85rem;
+    }
+    .duration {
+      font-size: 0.85rem;
+    }
+    .tools {
+      font-size: 0.85rem;
+    }
+    
+  }
+}
+.Toggle {
+  $height: variables.$inputHeight;
+
+  $width: $height + (math.div($height, 100) * 64.5);
+  $margin: $height - (math.div($height, 100) * 93.5);
+  position: relative;
+  width: $width;
+  height: $height;
+  display: inline-block;
+
+  span {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: variables.$septenary;
+    border-radius: variables.$rounded;
+  }
+
+  span:before {
+    content: "";
+    position: absolute;
+    height: $height - ($margin * 2);
+    width: $height - ($margin * 2);
+    left: $margin;
+    top: $margin;
+    background-color: variables.$background;
+    border-radius: variables.$circle;
+    transition: variables.$transition;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+  input:checked + span {
+    background-color: variables.$yellow;
+  }
+
+  input:checked + span:before {
+    transform: translateX($width - $height);
+  }
+}
+.DarkMode {
+  span:before {
+    background-image: url(../icons/sun.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+  }
+  input:checked + span:before {
+    background-image: url(../icons/moon.svg);
+  }
+}
+.Youtube {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  width: 100%;
+  box-sizing: border-box;
+
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: variables.$smallRadius;
+  }
+}
+.Footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  span {
+    font-size: 14px;
+    color: variables.$secondary;
+    font-family: variables.$font2;
+  }
+  .row {
+    align-items: center;
+    padding: 0;
+  }
+  .row:first-child {
+    padding-top: 1rem;
+  }
+  .row:last-child {
+    padding-bottom: 1rem;
+  }
+  .flex-right {
+    @include respond-to("xs") {
+      text-align: center;
+      width: 100%;
+      position: initial;
+    }
+    @include respond-to("s") {
+      text-align: center;
+      width: 100%;
+      position: initial;
+    }
+    @include respond-to("m") {
+      text-align: unset;
+      width: unset;
+      position: absolute;
+    }
+  }
+}
+.OnloadAnimation {
+  background-color: variables.$accent;
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  left: calc(50vw + 1px);
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.OnloadBackground {
+  animation: BGLoading 1s infinite;
+}

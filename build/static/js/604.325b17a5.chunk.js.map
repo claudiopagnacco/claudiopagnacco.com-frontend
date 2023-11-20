@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/604.325b17a5.chunk.js","mappings":"mMAEe,SAASA,IACtB,OAAOC,EAAAA,EAAAA,KAACC,EAAAA,IAAc,GACxB,C","sources":["components/library/icons/back.js"],"sourcesContent":["import { IoIosArrowBack } from \"react-icons/io\";\n\nexport default function BackIco() {\n  return <IoIosArrowBack />;\n}\n"],"names":["BackIco","_jsx","IoIosArrowBack"],"sourceRoot":""}

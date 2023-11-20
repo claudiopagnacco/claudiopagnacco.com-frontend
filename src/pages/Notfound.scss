@@ -1,0 +1,20 @@
+@use "../styles/variables.scss";
+@use "sass:math";
+@import "../styles/responsive.scss";
+
+.notfound-page {
+  .tip {
+    background-color: variables.$light-yellow;
+    padding: 1rem;
+    border-left: 3px solid variables.$yellow;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    display: block;
+  }
+  .seconds {
+    margin: 0 0.25rem;
+    display: inline-block;
+    color: variables.$accent;
+  }
+}

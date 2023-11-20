@@ -1,0 +1,192 @@
+@use "./variables.scss";
+@import "./responsive.scss";
+
+* {
+  color: variables.$primary;
+  transition: variables.$transition;
+}
+
+// Text [400 regular, 500 medium, 600 semi-bold, 700 bold, 800 extra-bold]
+html {
+  line-height: 1.5;
+  font-weight: 400; //regular
+  letter-spacing: -0.41px;
+
+  @include respond-to("xs") {
+    font-size: 16px;
+  }
+  @include respond-to("s") {
+    font-size: 16.5px;
+  }
+  @include respond-to("m") {
+    font-size: 17px;
+  }
+  @include respond-to("l") {
+    font-size: 17.5px;
+  }
+  @include respond-to("xl") {
+    font-size: 18px;
+  }
+  @include respond-to("xxl") {
+    font-size: 18.5px;
+  }
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700; //bold
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.25rem;
+  display: inline-flex;
+  vertical-align: middle;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-block-start: 0.3rem;
+  margin-block-end: 0.3rem;
+  display: inline-flex;
+  vertical-align: middle;
+}
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.25;
+  font-weight: 500;
+  margin-block-start: 0.35rem;
+  margin-block-end: 0.35rem;
+  display: inline-flex;
+  vertical-align: middle;
+}
+h4 {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 500;
+  margin-block-start: 0.35rem;
+  margin-block-end: 0.35rem;
+  display: block;
+  vertical-align: middle;
+}
+
+h5 {
+  font-size: 0.9rem;
+  line-height: 1;
+  font-weight: 100;
+  margin-block-start: 0.35rem;
+  margin-block-end: 0.35rem;
+  display: block;
+  vertical-align: middle;
+}
+p {
+  font-family: variables.$font2;
+}
+a {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+label {
+  font-size: 1rem;
+}
+.animated {
+  transition: none;
+}
+
+html {
+  background-color: variables.$background;
+}
+
+body {
+  background-image: radial-gradient(variables.$primary-15 12.5%, transparent 12.5%);
+  background-position: center;
+  background-size: 12.5px 12.5px;
+  color: variables.$primary;
+  margin: 0;
+  font-family: variables.$font;
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 81px;
+  max-width: 100vw;
+  background-image: unset;
+  background-color: unset;
+  background-position: unset;
+  background-size: unset;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-window-height {
+  height: calc(100vh - 70px);
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-top-left {
+  position: absolute;
+  display: inline-flex;
+  left: 0rem;
+  z-index: 1;
+  height: 70px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.nav-top-right {
+  position: absolute;
+  top: 0;
+  display: inline-flex;
+  right: 0rem;
+  z-index: 1;
+  height: 70px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.vertical-centered {
+  align-items: center;
+}
+
+.horizontal-centered {
+  justify-content: center;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.self-centered {
+  align-self: center;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+.spacer {
+  display: block;
+  height: 2rem;
+}
+
+.char-line {
+  color: variables.$accent;
+}

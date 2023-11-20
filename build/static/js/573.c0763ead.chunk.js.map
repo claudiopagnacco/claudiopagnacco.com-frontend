@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/573.c0763ead.chunk.js","mappings":"mMAEe,SAASA,IACpB,OAAOC,EAAAA,EAAAA,KAACC,EAAAA,IAAU,GACtB,C","sources":["components/library/icons/linkedin.js"],"sourcesContent":["import { FaLinkedin } from \"react-icons/fa\";\n\nexport default function LinkedinIco() {\n    return <FaLinkedin />\n}"],"names":["LinkedinIco","_jsx","FaLinkedin"],"sourceRoot":""}

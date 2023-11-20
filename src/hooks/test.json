@@ -1,0 +1,667 @@
+{
+  "data": [
+    {
+      "id": 4,
+      "attributes": {
+        "title": "This website",
+        "createdAt": "2023-05-04T16:02:36.936Z",
+        "updatedAt": "2023-05-05T14:00:43.051Z",
+        "publishedAt": "2023-05-04T16:02:52.120Z",
+        "description": "Scarica la tua pausa!",
+        "slug": "this",
+        "role": "UX Research, UI Designer",
+        "tools": "Figma, Miro, Pen & Paper",
+        "duration": "Spring 2023",
+        "lightColor": "#EAF4F4",
+        "darkColor": "#2C6666",
+        "lightAccent": "#2b8071",
+        "darkAccent": "#16ae93",
+        "order": "3",
+        "smallCover": {
+          "data": {
+            "id": 59,
+            "attributes": {
+              "name": "smallCover.jpg",
+              "alternativeText": "Cicara",
+              "caption": null,
+              "width": 1600,
+              "height": 1121,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_smallCover.jpg",
+                  "hash": "thumbnail_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 223,
+                  "height": 156,
+                  "size": 2.96,
+                  "url": "/uploads/thumbnail_small_Cover_1d25ac8780.jpg"
+                },
+                "small": {
+                  "name": "small_smallCover.jpg",
+                  "hash": "small_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 350,
+                  "size": 9.09,
+                  "url": "/uploads/small_small_Cover_1d25ac8780.jpg"
+                },
+                "large": {
+                  "name": "large_smallCover.jpg",
+                  "hash": "large_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 701,
+                  "size": 24.69,
+                  "url": "/uploads/large_small_Cover_1d25ac8780.jpg"
+                },
+                "medium": {
+                  "name": "medium_smallCover.jpg",
+                  "hash": "medium_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 525,
+                  "size": 16.3,
+                  "url": "/uploads/medium_small_Cover_1d25ac8780.jpg"
+                }
+              },
+              "hash": "small_Cover_1d25ac8780",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 180.23,
+              "url": "/uploads/small_Cover_1d25ac8780.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-05-04T12:36:25.575Z",
+              "updatedAt": "2023-05-09T00:22:23.647Z"
+            }
+          }
+        },
+        "bigCover": {
+          "data": {
+            "id": 51,
+            "attributes": {
+              "name": "bigCover.png",
+              "alternativeText": "Cicara",
+              "caption": null,
+              "width": 3456,
+              "height": 2234,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_bigCover.png",
+                  "hash": "thumbnail_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 241,
+                  "height": 156,
+                  "size": 24.61,
+                  "url": "/uploads/thumbnail_big_Cover_ea9c45c188.png"
+                },
+                "medium": {
+                  "name": "medium_bigCover.png",
+                  "hash": "medium_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 750,
+                  "height": 485,
+                  "size": 126.71,
+                  "url": "/uploads/medium_big_Cover_ea9c45c188.png"
+                },
+                "small": {
+                  "name": "small_bigCover.png",
+                  "hash": "small_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 323,
+                  "size": 71.66,
+                  "url": "/uploads/small_big_Cover_ea9c45c188.png"
+                },
+                "large": {
+                  "name": "large_bigCover.png",
+                  "hash": "large_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 1000,
+                  "height": 646,
+                  "size": 209.1,
+                  "url": "/uploads/large_big_Cover_ea9c45c188.png"
+                }
+              },
+              "hash": "big_Cover_ea9c45c188",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 735.36,
+              "url": "/uploads/big_Cover_ea9c45c188.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-05-02T23:44:52.046Z",
+              "updatedAt": "2023-05-09T00:23:10.713Z"
+            }
+          }
+        },
+        "section": [
+          {
+            "id": 23,
+            "title": "Rivoluziona la tua pausa",
+            "main": "Ci sono momenti in cui senti di aver solo bisogno di staccare, in cui vorresti sentirti padrone della tua pausa e scegliere con chi condividerla. \nAltre, in cui vorresti gestire meglio il tuo tempo, per essere efficiente senza affaticarti troppo.\n\n**Cicara** è la soluzione a problemi come quelli che circondano il momento di recupero delle nostre energie. \nEcco alcune schermate in movimento:\n\n",
+            "isPingpong": true,
+            "sectionTag": "Overview"
+          },
+          {
+            "id": 26,
+            "title": "Understanding The Challenge",
+            "main": "**Cicara** è un'azienda italiana che ha l'ambizioso obiettivo di sostituire i bicchieri usa-e-getta dei distrubutori automatici, in favore di una tazzina smart ed **ecosostenibile**, senza privarsi però del gusto **estetico**: Cicara infatti ha una cover 100% bio compostabile sostituibile all'occorenza, per seguire i gusti dell'utente. \n\n[www.cicara.it](https://www.cicara.it/)",
+            "isPingpong": false,
+            "sectionTag": "Understanding"
+          },
+          {
+            "id": 27,
+            "title": "Research",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Research"
+          },
+          {
+            "id": 28,
+            "title": "Defining",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Defining"
+          },
+          {
+            "id": 29,
+            "title": "Identifying",
+            "main": "Definiti gli insights abbiamo cercato quali fossero le domande giuste da porci per cogliere le opportunità:\n\n>1. Come possiamo aiutare le persone a **programmare e preservare le pause** che si concedono?\n\n>2. Come possiamo trasformare **l’acquisto del caffè in un’esperienza** semplice e intrattenitiva?",
+            "isPingpong": false,
+            "sectionTag": "Identifying"
+          },
+          {
+            "id": 30,
+            "title": "Design",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Design"
+          },
+          {
+            "id": 24,
+            "title": "High Fidelity Prototype",
+            "main": null,
+            "isPingpong": true,
+            "sectionTag": "High Fidelity"
+          },
+          {
+            "id": 25,
+            "title": "Iteration",
+            "main": "Abbiamo condotto decine di usability test in modo agile, sperimentando immediatamente le nuove modifiche apportate.\nNel giro di qualche ciclo le intenzioni delle schermate, dei singoli elementi e dei flussi risultavano chiare per chiunque.\n\nNel dettaglio abbiamo modificato il flusso per offrire il caffè, la visualizzazione della dashboard e completato alcuni flussi con messaggi di conferma e di successo per rassicurare l'utente.\n\nAlcune schermate ridisegnate dopo i nostri test:",
+            "isPingpong": true,
+            "sectionTag": "Iteration"
+          },
+          {
+            "id": 22,
+            "title": "Reflection",
+            "main": "Lavorare a questo progetto è stata una sfida. \nIl contesto della pausa e del caffè, seppur apparentemente semplici, comprende tante sfaccettature: coinvolge ogni persona e disegnare un flusso che possa includere chiunque è quasi impossibile.\nIl nostro sforzo è stato quello di rendere Cicara un App potenzialmente per chiunque: da chi lavora in azienda ai freelance, da chi è abituato a lavorare da solo e chi in gruppo. Da chi preferisce la solitudine a chi i rapporti sociali.\n\nIl nostro sforzo non termina qua, e mi auguro vivamente di poter ancora migliorare questa app sulla base di futuri feedback.",
+            "isPingpong": null,
+            "sectionTag": "Reflection"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Cicara Time Out",
+        "createdAt": "2023-04-29T16:01:09.896Z",
+        "updatedAt": "2023-05-09T00:23:26.096Z",
+        "publishedAt": "2023-04-29T16:01:14.696Z",
+        "description": "Scarica la tua pausa!",
+        "slug": "cicara",
+        "role": "UX Research, UI Designer",
+        "tools": "Figma, Miro, Pen & Paper",
+        "duration": "Spring 2023",
+        "lightColor": "#EAF4F4",
+        "darkColor": "#2C6666",
+        "lightAccent": "#2b8071",
+        "darkAccent": "#16ae93",
+        "order": "2",
+        "smallCover": {
+          "data": {
+            "id": 59,
+            "attributes": {
+              "name": "smallCover.jpg",
+              "alternativeText": "Cicara",
+              "caption": null,
+              "width": 1600,
+              "height": 1121,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_smallCover.jpg",
+                  "hash": "thumbnail_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 223,
+                  "height": 156,
+                  "size": 2.96,
+                  "url": "/uploads/thumbnail_small_Cover_1d25ac8780.jpg"
+                },
+                "small": {
+                  "name": "small_smallCover.jpg",
+                  "hash": "small_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 350,
+                  "size": 9.09,
+                  "url": "/uploads/small_small_Cover_1d25ac8780.jpg"
+                },
+                "large": {
+                  "name": "large_smallCover.jpg",
+                  "hash": "large_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 701,
+                  "size": 24.69,
+                  "url": "/uploads/large_small_Cover_1d25ac8780.jpg"
+                },
+                "medium": {
+                  "name": "medium_smallCover.jpg",
+                  "hash": "medium_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 525,
+                  "size": 16.3,
+                  "url": "/uploads/medium_small_Cover_1d25ac8780.jpg"
+                }
+              },
+              "hash": "small_Cover_1d25ac8780",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 180.23,
+              "url": "/uploads/small_Cover_1d25ac8780.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-05-04T12:36:25.575Z",
+              "updatedAt": "2023-05-09T00:22:23.647Z"
+            }
+          }
+        },
+        "bigCover": {
+          "data": {
+            "id": 51,
+            "attributes": {
+              "name": "bigCover.png",
+              "alternativeText": "Cicara",
+              "caption": null,
+              "width": 3456,
+              "height": 2234,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_bigCover.png",
+                  "hash": "thumbnail_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 241,
+                  "height": 156,
+                  "size": 24.61,
+                  "url": "/uploads/thumbnail_big_Cover_ea9c45c188.png"
+                },
+                "medium": {
+                  "name": "medium_bigCover.png",
+                  "hash": "medium_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 750,
+                  "height": 485,
+                  "size": 126.71,
+                  "url": "/uploads/medium_big_Cover_ea9c45c188.png"
+                },
+                "small": {
+                  "name": "small_bigCover.png",
+                  "hash": "small_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 323,
+                  "size": 71.66,
+                  "url": "/uploads/small_big_Cover_ea9c45c188.png"
+                },
+                "large": {
+                  "name": "large_bigCover.png",
+                  "hash": "large_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 1000,
+                  "height": 646,
+                  "size": 209.1,
+                  "url": "/uploads/large_big_Cover_ea9c45c188.png"
+                }
+              },
+              "hash": "big_Cover_ea9c45c188",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 735.36,
+              "url": "/uploads/big_Cover_ea9c45c188.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-05-02T23:44:52.046Z",
+              "updatedAt": "2023-05-09T00:23:10.713Z"
+            }
+          }
+        },
+        "section": [
+          {
+            "id": 1,
+            "title": "Rivoluziona la tua pausa",
+            "main": "Ci sono momenti in cui senti di aver solo bisogno di staccare, in cui vorresti sentirti padrone della tua pausa e scegliere con chi condividerla. \nAltre, in cui vorresti gestire meglio il tuo tempo, per essere efficiente senza affaticarti troppo.\n\n**Cicara** è la soluzione a problemi come quelli che circondano il momento di recupero delle nostre energie. \nEcco alcune schermate in movimento:\n\n",
+            "isPingpong": true,
+            "sectionTag": "Overview"
+          },
+          {
+            "id": 2,
+            "title": "Understanding The Challenge",
+            "main": "**Cicara** è un'azienda italiana che ha l'ambizioso obiettivo di sostituire i bicchieri usa-e-getta dei distrubutori automatici, in favore di una tazzina smart ed **ecosostenibile**, senza privarsi però del gusto **estetico**: Cicara infatti ha una cover 100% bio compostabile sostituibile all'occorenza, per seguire i gusti dell'utente. \n\n[www.cicara.it](https://www.cicara.it/)",
+            "isPingpong": false,
+            "sectionTag": "Understanding"
+          },
+          {
+            "id": 5,
+            "title": "Research",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Research"
+          },
+          {
+            "id": 6,
+            "title": "Defining",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Defining"
+          },
+          {
+            "id": 7,
+            "title": "Identifying",
+            "main": "Definiti gli insights abbiamo cercato quali fossero le domande giuste da porci per cogliere le opportunità:\n\n>1. Come possiamo aiutare le persone a **programmare e preservare le pause** che si concedono?\n\n>2. Come possiamo trasformare **l’acquisto del caffè in un’esperienza** semplice e intrattenitiva?",
+            "isPingpong": false,
+            "sectionTag": "Identifying"
+          },
+          {
+            "id": 8,
+            "title": "Design",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Design"
+          },
+          {
+            "id": 9,
+            "title": "High Fidelity Prototype",
+            "main": null,
+            "isPingpong": true,
+            "sectionTag": "High Fidelity"
+          },
+          {
+            "id": 10,
+            "title": "Iteration",
+            "main": "Abbiamo condotto decine di usability test in modo agile, sperimentando immediatamente le nuove modifiche apportate.\nNel giro di qualche ciclo le intenzioni delle schermate, dei singoli elementi e dei flussi risultavano chiare per chiunque.\n\nNel dettaglio abbiamo modificato il flusso per offrire il caffè, la visualizzazione della dashboard e completato alcuni flussi con messaggi di conferma e di successo per rassicurare l'utente.\n\nAlcune schermate ridisegnate dopo i nostri test:",
+            "isPingpong": true,
+            "sectionTag": "Iteration"
+          },
+          {
+            "id": 11,
+            "title": "Reflection",
+            "main": "Lavorare a questo progetto è stata una sfida. \nIl contesto della pausa e del caffè, seppur apparentemente semplici, comprende tante sfaccettature: coinvolge ogni persona e disegnare un flusso che possa includere chiunque è quasi impossibile.\nIl nostro sforzo è stato quello di rendere Cicara un App potenzialmente per chiunque: da chi lavora in azienda ai freelance, da chi è abituato a lavorare da solo e chi in gruppo. Da chi preferisce la solitudine a chi i rapporti sociali.\n\nIl nostro sforzo non termina qua, e mi auguro vivamente di poter ancora migliorare questa app sulla base di futuri feedback.\n",
+            "isPingpong": null,
+            "sectionTag": "Reflection"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "Ilaria Dagnino",
+        "createdAt": "2023-05-04T16:02:18.624Z",
+        "updatedAt": "2023-05-05T16:49:26.596Z",
+        "publishedAt": "2023-05-04T16:02:27.710Z",
+        "description": "Scarica la tua pausa!",
+        "slug": "ilaria-dagnino",
+        "role": "UX Research, UI Designer",
+        "tools": "Figma, Miro, Pen & Paper",
+        "duration": "Spring 2023",
+        "lightColor": "#EAF4F4",
+        "darkColor": "#2C6666",
+        "lightAccent": "#2b8071",
+        "darkAccent": "#16ae93",
+        "order": "1",
+        "smallCover": {
+          "data": {
+            "id": 59,
+            "attributes": {
+              "name": "smallCover.jpg",
+              "alternativeText": "Cicara",
+              "caption": null,
+              "width": 1600,
+              "height": 1121,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_smallCover.jpg",
+                  "hash": "thumbnail_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 223,
+                  "height": 156,
+                  "size": 2.96,
+                  "url": "/uploads/thumbnail_small_Cover_1d25ac8780.jpg"
+                },
+                "small": {
+                  "name": "small_smallCover.jpg",
+                  "hash": "small_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 350,
+                  "size": 9.09,
+                  "url": "/uploads/small_small_Cover_1d25ac8780.jpg"
+                },
+                "large": {
+                  "name": "large_smallCover.jpg",
+                  "hash": "large_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 701,
+                  "size": 24.69,
+                  "url": "/uploads/large_small_Cover_1d25ac8780.jpg"
+                },
+                "medium": {
+                  "name": "medium_smallCover.jpg",
+                  "hash": "medium_small_Cover_1d25ac8780",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 525,
+                  "size": 16.3,
+                  "url": "/uploads/medium_small_Cover_1d25ac8780.jpg"
+                }
+              },
+              "hash": "small_Cover_1d25ac8780",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 180.23,
+              "url": "/uploads/small_Cover_1d25ac8780.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-05-04T12:36:25.575Z",
+              "updatedAt": "2023-05-09T00:22:23.647Z"
+            }
+          }
+        },
+        "bigCover": {
+          "data": {
+            "id": 51,
+            "attributes": {
+              "name": "bigCover.png",
+              "alternativeText": "Cicara",
+              "caption": null,
+              "width": 3456,
+              "height": 2234,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_bigCover.png",
+                  "hash": "thumbnail_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 241,
+                  "height": 156,
+                  "size": 24.61,
+                  "url": "/uploads/thumbnail_big_Cover_ea9c45c188.png"
+                },
+                "medium": {
+                  "name": "medium_bigCover.png",
+                  "hash": "medium_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 750,
+                  "height": 485,
+                  "size": 126.71,
+                  "url": "/uploads/medium_big_Cover_ea9c45c188.png"
+                },
+                "small": {
+                  "name": "small_bigCover.png",
+                  "hash": "small_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 323,
+                  "size": 71.66,
+                  "url": "/uploads/small_big_Cover_ea9c45c188.png"
+                },
+                "large": {
+                  "name": "large_bigCover.png",
+                  "hash": "large_big_Cover_ea9c45c188",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 1000,
+                  "height": 646,
+                  "size": 209.1,
+                  "url": "/uploads/large_big_Cover_ea9c45c188.png"
+                }
+              },
+              "hash": "big_Cover_ea9c45c188",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 735.36,
+              "url": "/uploads/big_Cover_ea9c45c188.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-05-02T23:44:52.046Z",
+              "updatedAt": "2023-05-09T00:23:10.713Z"
+            }
+          }
+        },
+        "section": [
+          {
+            "id": 14,
+            "title": "Rivoluziona la tua pausa",
+            "main": "Ci sono momenti in cui senti di aver solo bisogno di staccare, in cui vorresti sentirti padrone della tua pausa e scegliere con chi condividerla. \nAltre, in cui vorresti gestire meglio il tuo tempo, per essere efficiente senza affaticarti troppo.\n\n**Cicara** è la soluzione a problemi come quelli che circondano il momento di recupero delle nostre energie. \nEcco alcune schermate in movimento:\n\n",
+            "isPingpong": true,
+            "sectionTag": "Overview"
+          },
+          {
+            "id": 17,
+            "title": "Understanding The Challenge",
+            "main": "**Cicara** è un'azienda italiana che ha l'ambizioso obiettivo di sostituire i bicchieri usa-e-getta dei distrubutori automatici, in favore di una tazzina smart ed **ecosostenibile**, senza privarsi però del gusto **estetico**: Cicara infatti ha una cover 100% bio compostabile sostituibile all'occorenza, per seguire i gusti dell'utente. \n\n[www.cicara.it](https://www.cicara.it/)",
+            "isPingpong": false,
+            "sectionTag": "Understanding"
+          },
+          {
+            "id": 18,
+            "title": "Research",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Research"
+          },
+          {
+            "id": 19,
+            "title": "Defining",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Defining"
+          },
+          {
+            "id": 20,
+            "title": "Identifying",
+            "main": "Definiti gli insights abbiamo cercato quali fossero le domande giuste da porci per cogliere le opportunità:\n\n>1. Come possiamo aiutare le persone a **programmare e preservare le pause** che si concedono?\n\n>2. Come possiamo trasformare **l’acquisto del caffè in un’esperienza** semplice e intrattenitiva?",
+            "isPingpong": false,
+            "sectionTag": "Identifying"
+          },
+          {
+            "id": 21,
+            "title": "Design",
+            "main": null,
+            "isPingpong": false,
+            "sectionTag": "Design"
+          },
+          {
+            "id": 15,
+            "title": "High Fidelity Prototype",
+            "main": null,
+            "isPingpong": true,
+            "sectionTag": "High Fidelity"
+          },
+          {
+            "id": 16,
+            "title": "Iteration",
+            "main": "Abbiamo condotto decine di usability test in modo agile, sperimentando immediatamente le nuove modifiche apportate.\nNel giro di qualche ciclo le intenzioni delle schermate, dei singoli elementi e dei flussi risultavano chiare per chiunque.\n\nNel dettaglio abbiamo modificato il flusso per offrire il caffè, la visualizzazione della dashboard e completato alcuni flussi con messaggi di conferma e di successo per rassicurare l'utente.\n\nAlcune schermate ridisegnate dopo i nostri test:",
+            "isPingpong": true,
+            "sectionTag": "Iteration"
+          },
+          {
+            "id": 13,
+            "title": "Reflection",
+            "main": "Lavorare a questo progetto è stata una sfida. \nIl contesto della pausa e del caffè, seppur apparentemente semplici, comprende tante sfaccettature: coinvolge ogni persona e disegnare un flusso che possa includere chiunque è quasi impossibile.\nIl nostro sforzo è stato quello di rendere Cicara un App potenzialmente per chiunque: da chi lavora in azienda ai freelance, da chi è abituato a lavorare da solo e chi in gruppo. Da chi preferisce la solitudine a chi i rapporti sociali.\n\nIl nostro sforzo non termina qua, e mi auguro vivamente di poter ancora migliorare questa app sulla base di futuri feedback.",
+            "isPingpong": null,
+            "sectionTag": "Reflection"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 3 }
+  }
+}

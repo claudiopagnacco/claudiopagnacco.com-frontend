@@ -1,0 +1,604 @@
+@use "../styles/variables.scss";
+@use "sass:math";
+@import "../styles/responsive.scss";
+
+$timing: 100;
+$inView: 4;
+
+$images: 20;
+$extras: 5;
+$traslate-bis: -1 * math.div($images, $extras) * 100%;
+
+@keyframes Highlight {
+  0% {
+    left: 0px;
+    right: unset;
+    width: 0%;
+    background-color: variables.$accent;
+    transform: skew(-2deg, -2deg);
+  }
+  50% {
+    left: 0px;
+    right: unset;
+    width: 100%;
+    background-color: variables.$blue;
+  }
+  51% {
+    left: unset;
+    right: 0px;
+    width: 100%;
+  }
+  100% {
+    left: unset;
+    right: 0px;
+    width: 0%;
+    background-color: variables.$pink;
+    transform: skew(2deg, 2deg);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-bis {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX($traslate-bis);
+  }
+}
+
+.creativity-page {
+  p {
+    a {
+      text-decoration: underline;
+      font-weight: 500;
+      font-family: variables.$font2;
+    }
+  }
+  div {
+    transition: none;
+  }
+
+  p,
+  li,
+  a,
+  strong {
+    font-family: variables.$font2;
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    position: relative;
+    div {
+      display: block;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      animation: Highlight 1.3s ease-in-out;
+      animation-delay: 0.1s;
+      opacity: 0.5;
+      border-radius: 1rem;
+    }
+  }
+
+  .section {
+    padding-bottom: 5vh;
+  }
+  .transparent {
+    opacity: 0.2;
+    transition: 0.15s ease-out;
+  }
+  .transparent:hover {
+    opacity: 1;
+  }
+  .container.preview {
+    margin: 0 auto 0 auto;
+  }
+
+  .preview-container {
+    width: 100%;
+    display: block;
+    min-height: calc(60vh);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .header-preview {
+    width: 100%;
+    display: block;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: none;
+  }
+  .preview-card.container {
+    @include respond-to("xs") {
+      min-width: 360px;
+    }
+    @include respond-to("s") {
+      max-width: 95%;
+    }
+    @include respond-to("m") {
+      max-width: 97%;
+    }
+    @include respond-to("l") {
+      max-width: 95%;
+    }
+    @include respond-to("xl") {
+      max-width: 90%;
+    }
+    @include respond-to("xxl") {
+      max-width: 1500px;
+    }
+  }
+  .preview-card {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .row {
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+      padding: 1rem;
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .info-video {
+        position: absolute;
+        overflow-y: auto;
+        width: 40%;
+        left: 0;
+        mask-image: linear-gradient(180deg, white, 85%, transparent);
+        background: linear-gradient(90deg, rgb(0 0 0 / 80%), transparent);
+        height: 100%;
+        padding: 3rem;
+        padding-right: 6rem;
+        padding-bottom: 6rem;
+        box-sizing: border-box;
+        @include respond-to("xs") {
+          width: 100%;
+          padding: 1.5rem;
+          padding-right: 1.5rem;
+          padding-bottom: 6rem;
+        }
+        @include respond-to("s") {
+          width: 100%;
+          padding: 2rem;
+          padding-right: 2rem;
+          padding-bottom: 6rem;
+        }
+        @include respond-to("m") {
+          width: 50%;
+          padding: 2.5rem;
+          padding-right: 4.5rem;
+          padding-bottom: 6rem;
+        }
+        @include respond-to("l") {
+          width: 40%;
+          padding: 3rem;
+          padding-right: 6rem;
+          padding-bottom: 6rem;
+        }
+
+        p,
+        h3 {
+          color: white;
+        }
+        .role {
+          p {
+            margin: 0;
+            font-size: 1rem;
+          }
+        }
+        .duration {
+          p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.7;
+          }
+        }
+        .description {
+          display: unset;
+          @include respond-to("xs") {
+            display: none;
+          }
+          @include respond-to("s") {
+            display: none;
+          }
+          @include respond-to("m") {
+            display: unset;
+          }
+        }
+        .awards {
+          * {
+            color: white;
+          }
+          li {
+            list-style-type: circle;
+          }
+          ul {
+            padding-left: 1rem;
+          }
+          display: unset;
+          @include respond-to("xs") {
+            display: none;
+          }
+          @include respond-to("s") {
+            display: none;
+          }
+          @include respond-to("m") {
+            display: unset;
+          }
+        }
+      }
+    }
+    .playButton {
+      width: 100px;
+      height: 100px;
+      border: unset;
+      background-color: variables.$background-80;
+      cursor: pointer;
+      border-radius: 100%;
+      font-size: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.65;
+      z-index: 1;
+    }
+  }
+
+  .preview-card:hover {
+    cursor: pointer;
+    .playButton {
+      background-color: variables.$background;
+      opacity: 1;
+    }
+  }
+
+  .video-thumbs {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .flex-card-container {
+    position: relative;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0.3rem !important;
+  }
+
+  .cine-card {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    background-color: variables.$senary;
+    margin: 0.3rem;
+    border-radius: variables.$smallRadius;
+    cursor: pointer;
+    transition: 0.15s ease-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .cine-card:hover {
+    transform: scale(1.025);
+  }
+
+  .cine-card:active {
+    transform: scale(0.975);
+  }
+
+  .card-selected {
+    background-color: variables.$accent-10;
+    border: 0.2rem solid variables.$accent;
+    display: inline-flex;
+    //margin: 1rem;
+    border-radius: calc(variables.$smallRadius + 0.3rem);
+    //overflow: hidden;
+    position: absolute;
+    width: calc(100% - 0.3rem);
+    height: calc(100% - 0.3rem);
+    z-index: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .video-foreground {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+  }
+
+  .closeButton {
+    width: auto;
+    color: white;
+    height: auto;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: black;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 1rem;
+    display: inline-flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0.8;
+    transform: translateY(0);
+    path {
+      color: white;
+    }
+  }
+  .closeButton:hover {
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  .ping-pong {
+    .row {
+      margin: 5vh 0;
+    }
+  }
+
+  .ping {
+    @include respond-to("xs") {
+      order: 1;
+      padding-bottom: 2rem !important;
+    }
+    @include respond-to("s") {
+      order: 1;
+      padding-bottom: 2rem !important;
+    }
+    @include respond-to("m") {
+      order: unset;
+      padding-bottom: 0;
+    }
+  }
+
+  .ping.right {
+    padding-left: 3rem;
+    @include respond-to("xs") {
+      padding-left: 0;
+    }
+    @include respond-to("s") {
+      padding-left: 0;
+    }
+    @include respond-to("m") {
+      padding-left: 3rem;
+    }
+  }
+  .ping.left {
+    padding-right: 3rem;
+    @include respond-to("xs") {
+      padding-right: 0;
+    }
+    @include respond-to("s") {
+      padding-right: 0;
+    }
+    @include respond-to("m") {
+      padding-right: 3rem;
+    }
+  }
+
+  .pong {
+    img {
+      border-radius: variables.$radius;
+      max-width: 100%;
+      max-height: 80vh;
+      box-shadow: 0 0 20px 0 variables.$senary;
+    }
+    video {
+      border-radius: variables.$radius;
+      max-width: 100%;
+      max-height: 80vh;
+      box-shadow: 0 0 20px 0 variables.$senary;
+    }
+    @include respond-to("xs") {
+      order: 2;
+    }
+    @include respond-to("s") {
+      order: 2;
+    }
+    @include respond-to("m") {
+      order: unset;
+    }
+  }
+
+  .pong.right {
+    text-align: right;
+    @include respond-to("xs") {
+      text-align: center;
+    }
+    @include respond-to("s") {
+      text-align: center;
+    }
+  }
+  .pong.left {
+    text-align: left;
+    @include respond-to("xs") {
+      text-align: center;
+    }
+    @include respond-to("s") {
+      text-align: center;
+    }
+  }
+
+  .sticky {
+    position: sticky;
+    top: 5%;
+  }
+
+  .carousel {
+    width: auto;
+    display: flex;
+    position: relative;
+    height: auto;
+    overflow-x: hidden;
+    .set-1,
+    .set-1-bis,
+    .set-2,
+    .set-2-bis {
+      display: flex;
+      flex-direction: row;
+      white-space: nowrap;
+      padding: 2rem 0;
+      .image {
+        border-radius: variables.$smallRadius;
+        background-color: variables.$septenary;
+        position: relative;
+        width: calc((100vw / $inView) - 2.5rem);
+        height: calc((100vw / $inView) - 2.5rem);
+        margin: 0 1.25rem;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        @include respond-to("xs") {
+          width: calc((100vw / math.div($inView, 2)) - 1rem);
+          height: calc(((100vw / math.div($inView, 2)) - 1rem) * 5 / 4);
+          margin: 0 0.5rem;
+        }
+        @include respond-to("s") {
+          width: calc((100vw / math.div($inView, 1.5)) - 2rem);
+          height: calc(((100vw / math.div($inView, 1.5)) - 2rem) * 5 / 4);
+          margin: 0 1rem;
+        }
+        @include respond-to("m") {
+          width: calc((100vw / $inView) - 2.5rem);
+          height: calc(((100vw / $inView) - 2.5rem) * 5 / 4);
+          margin: 0 1.25rem;
+        }
+        img {
+          aspect-ratio: 4/5;
+          width: 100%;
+        }
+      }
+      .rot-l {
+        transform: rotate(-2deg);
+      }
+      .rot-r {
+        transform: rotate(2deg);
+      }
+      .image:hover {
+        cursor: pointer;
+      }
+      .rot-l:hover {
+        transform: rotate(1deg) scale(1.1);
+      }
+      .rot-r:hover {
+        transform: rotate(-1deg) scale(1.1);
+      }
+    }
+    .set-1 {
+      animation-name: marquee;
+      animation-duration: $timing + s;
+      animation-play-state: running;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @include respond-to("xs") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("s") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("m") {
+        animation-duration: $timing + s;
+      }
+    }
+    .set-1-bis {
+      animation-name: marquee-bis;
+      animation-duration: $timing + s;
+      animation-play-state: running;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @include respond-to("xs") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("s") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("m") {
+        animation-duration: $timing + s;
+      }
+    }
+    .set-2,
+    .set-2-bis {
+      display: none;
+    }
+    .set-2 {
+      animation-name: marquee;
+      animation-duration: $timing + s;
+      animation-play-state: running;
+      animation-direction: reverse;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @include respond-to("xs") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("s") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("m") {
+        animation-duration: $timing + s;
+      }
+    }
+    .set-2-bis {
+      animation-name: marquee-bis;
+      animation-duration: $timing + s;
+      animation-play-state: running;
+      animation-direction: reverse;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @include respond-to("xs") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("s") {
+        animation-duration: math.div($timing, 2) + s;
+      }
+      @include respond-to("m") {
+        animation-duration: $timing + s;
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclaudiopagnacco_com=self.webpackChunkclaudiopagnacco_com||[]).push([[730],{7730:function(c,n,u){u.r(n),u.d(n,{default:function(){return e}});var a=u(6355),o=u(184);function e(){return(0,o.jsx)(a.gmG,{})}}}]);
+//# sourceMappingURL=730.1adfc00d.chunk.js.map

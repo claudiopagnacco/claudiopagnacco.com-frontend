@@ -1,0 +1,531 @@
+@use "../styles/variables.scss";
+@import "../styles/responsive.scss";
+
+.project-page {
+  max-width: 100vw;
+  overflow-x: clip;
+  div {
+    transition: none;
+  }
+
+  p,
+  li,
+  a,
+  strong {
+    font-family: variables.$font2;
+  }
+
+  h2 {
+    margin: auto;
+    padding: 2rem 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    letter-spacing: 0.025rem;
+    line-height: 2rem;
+    /*img {
+      border-radius: calc(variables.$radius / 2);
+      margin: 2rem 0;
+
+      max-width: 100%;
+      max-height: 80vh;
+      box-shadow: 0 0 20px 0 variables.$senary;
+    }*/
+    img {
+      border-radius: variables.$smallRadius;
+      margin: 10% 0;
+      text-align: center;
+      position: sticky;
+      max-width: 100%;
+      max-height: 50vh;
+      box-shadow: 0 0 20px 0 variables.$senary;
+      @include respond-to("xs") {
+        transform: scale(1);
+        top: 2rem;
+      }
+      @include respond-to("s") {
+        transform: scale(1);
+        top: 2rem;
+      }
+      @include respond-to("m") {
+        transform: scale(1.15);
+        top: 5%;
+      }
+      @include respond-to("l") {
+        transform: scale(1.3);
+        top: 10%;
+      }
+      @include respond-to("xl") {
+        transform: scale(1.3);
+        top: 10%;
+      }
+      @include respond-to("xxl") {
+        transform: scale(1.3);
+        top: 10%;
+      }
+    }
+    img:hover {
+      @include respond-to("xs") {
+        transform: scale(1);
+      }
+      @include respond-to("s") {
+        transform: scale(1);
+      }
+      @include respond-to("m") {
+        transform: scale(1.2);
+      }
+      @include respond-to("l") {
+        transform: scale(1.35);
+      }
+      @include respond-to("xl") {
+        transform: scale(1.4);
+      }
+      @include respond-to("xxl") {
+        transform: scale(1.4);
+      }
+    }
+  }
+
+  blockquote {
+    padding: 0rem 1em;
+    margin: 0;
+    border-left: 5px solid variables.$quinary;
+    box-sizing: border-box;
+
+    p {
+      font-weight: 500;
+      font-size: 1.1rem;
+      letter-spacing: normal;
+    }
+  }
+
+  pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    background-color: variables.$septenary;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: variables.$radius;
+
+    code {
+      color: variables.$primary;
+      opacity: 0.85;
+      font-size: 0.85rem;
+    }
+  }
+
+  .sideNav {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: transparent;
+    border-radius: 5px;
+
+    @include respond-to("xs") {
+      display: none;
+    }
+    @include respond-to("s") {
+      right: 0.5vw;
+      display: flex;
+    }
+    @include respond-to("m") {
+      right: 1.5vw;
+      display: flex;
+    }
+    @include respond-to("l") {
+      right: 3.5vw;
+      display: flex;
+    }
+    @include respond-to("xl") {
+      right: 6.5vw;
+      display: flex;
+    }
+    @include respond-to("xxl") {
+      right: 10vw;
+      display: flex;
+    }
+
+    li,
+    a {
+      color: variables.$primary-25;
+      font-size: 0.85rem;
+      line-height: 2rem;
+      display: inline-flex;
+      align-items: center;
+
+      svg {
+        margin-left: 0.5rem;
+      }
+
+      path {
+        color: variables.$primary-25;
+      }
+    }
+
+    li:hover,
+    a:hover,
+    .active {
+      color: variables.$primary;
+      cursor: pointer;
+      path {
+        color: variables.$primary;
+      }
+    }
+  }
+
+  .sideNav:hover {
+    background-color: variables.$background;
+  }
+  .headSection {
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: variables.$transition;
+    background-image: linear-gradient(0deg, variables.$background, transparent);
+
+    .image {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .section {
+    margin-top: 10vh;
+  }
+
+  .row {
+    margin: 10vh 0;
+  }
+
+  .section > .container:first-child > .row:first-child {
+    margin-bottom: -10vh;
+  }
+
+  .subsection > .row:nth-child(2) {
+    margin-top: 0;
+  }
+  .subsection > .row:first-child {
+    margin-bottom: -1.5rem;
+  }
+
+  .subsection {
+    h3 {
+      padding: 0 1rem 0.25rem 0rem;
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 0 1em;
+    @include respond-to("xs") {
+      min-width: 375px;
+      width: 100%;
+    }
+    @include respond-to("s") {
+      max-width: 85%;
+    }
+    @include respond-to("m") {
+      max-width: 75%;
+    }
+    @include respond-to("l") {
+      max-width: 65%;
+    }
+    @include respond-to("xxl") {
+      max-width: 55%;
+    }
+  }
+
+  .extras {
+    padding: 15vh 0 5vh 0;
+    .extra-label {
+      text-align: right;
+      @include respond-to("xs") {
+        order: 1;
+        text-align: center;
+      }
+      @include respond-to("s") {
+        order: 1;
+        text-align: center;
+      }
+      @include respond-to("m") {
+        order: unset;
+        text-align: right;
+      }
+    }
+    .extra-text {
+      font-weight: 500;
+      @include respond-to("xs") {
+        order: 2;
+        text-align: center;
+      }
+      @include respond-to("s") {
+        order: 2;
+        text-align: center;
+      }
+      @include respond-to("m") {
+        order: unset;
+        text-align: left;
+      }
+    }
+    .row {
+      margin: 0;
+    }
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .pong {
+    img {
+      border-radius: variables.$radius;
+      max-width: 100%;
+      max-height: 80vh;
+      box-shadow: 0 0 20px 0 variables.$senary;
+    }
+    video {
+      border-radius: variables.$radius;
+      max-width: 100%;
+      max-height: 80vh;
+      box-shadow: 0 0 20px 0 variables.$senary;
+    }
+    @include respond-to("xs") {
+      order: 2;
+    }
+    @include respond-to("s") {
+      order: 2;
+    }
+    @include respond-to("m") {
+      order: unset;
+    }
+  }
+
+  .pong.right {
+    text-align: right;
+    @include respond-to("xs") {
+      text-align: center;
+    }
+    @include respond-to("s") {
+      text-align: center;
+    }
+  }
+  .pong.left {
+    text-align: left;
+    @include respond-to("xs") {
+      text-align: center;
+    }
+    @include respond-to("s") {
+      text-align: center;
+    }
+  }
+
+  .ping {
+    .sticky {
+      position: sticky;
+      top: 20%;
+    }
+    @include respond-to("xs") {
+      order: 1;
+      padding-bottom: 2rem !important;
+    }
+    @include respond-to("s") {
+      order: 1;
+      padding-bottom: 2rem !important;
+    }
+    @include respond-to("m") {
+      order: unset;
+      padding-bottom: 0;
+    }
+  }
+
+  .ping.right {
+    padding-left: 3rem;
+    @include respond-to("xs") {
+      padding-left: 0;
+    }
+    @include respond-to("s") {
+      padding-left: 0;
+    }
+    @include respond-to("m") {
+      padding-left: 3rem;
+    }
+  }
+  .ping.left {
+    padding-right: 3rem;
+    @include respond-to("xs") {
+      padding-right: 0;
+    }
+    @include respond-to("s") {
+      padding-right: 0;
+    }
+    @include respond-to("m") {
+      padding-right: 3rem;
+    }
+  }
+
+  .figma {
+    text-align: center;
+
+    iframe {
+      width: 100%;
+      height: calc(100vh - 70px);
+      border: unset;
+      border-radius: 20px;
+    }
+  }
+
+  .pjNav {
+    z-index: 1;
+    transition: variables.$transition;
+    opacity: 0.25;
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    position: sticky;
+    bottom: 2rem;
+    justify-content: space-between;
+    display: flex;
+    @include respond-to("xs") {
+      min-width: 375px;
+      opacity: 1;
+    }
+    @include respond-to("m") {
+      min-width: 375px;
+      opacity: 0.25;
+    }
+    @include respond-to("xl") {
+      max-width: 1200px;
+    }
+    @include respond-to("xxl") {
+      max-width: 1400px;
+    }
+
+    .arrow {
+      box-sizing: border-box;
+      position: relative;
+      display: inline-flex;
+      font-size: 0.85rem;
+      font-family: variables.$font2;
+      @include respond-to("xs") {
+        height: 3rem;
+      }
+      @include respond-to("m") {
+        height: unset;
+      }
+
+      span {
+        width: 0%;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: transparent;
+        color: transparent;
+        padding: 1rem 0;
+        z-index: -1;
+        box-sizing: border-box;
+        position: relative;
+        text-underline-offset: 0.5rem;
+        @include respond-to("xs") {
+          display: none;
+        }
+        @include respond-to("m") {
+          display: block;
+        }
+      }
+      u {
+        margin-left: 1rem;
+      }
+      svg {
+        transition-delay: 300ms;
+        background-color: transparent;
+        border-radius: 100px;
+        height: auto;
+        padding: 0 1rem;
+        width: 3rem;
+        z-index: 1;
+        box-sizing: border-box;
+        path {
+          color: variables.$primary;
+        }
+      }
+    }
+    .next {
+      justify-content: right;
+      span {
+        border-radius: 100px 0 0 100px;
+        right: calc(-3rem / 2);
+      }
+    }
+    .back {
+      justify-content: left;
+      span {
+        border-radius: 0 100px 100px 0;
+        left: calc(-3rem / 2);
+      }
+    }
+
+    .arrow:hover {
+      cursor: pointer;
+      span {
+        width: calc(100% - 3rem);
+      }
+    }
+
+    .back:hover {
+      span {
+        padding: 1rem 1rem 1rem 2rem;
+      }
+    }
+
+    .next:hover {
+      span {
+        padding: 1rem 2rem 1rem 1rem;
+      }
+    }
+  }
+
+  .pjNav:hover {
+    opacity: 1;
+
+    .arrow:hover {
+      span {
+        background-color: variables.$background;
+        color: variables.$primary;
+      }
+
+      svg {
+        transition: none;
+        background-color: variables.$background;
+
+        path {
+          color: variables.$primary;
+        }
+      }
+    }
+  }
+}

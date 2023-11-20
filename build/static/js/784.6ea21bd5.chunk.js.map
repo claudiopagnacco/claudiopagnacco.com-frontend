@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/784.6ea21bd5.chunk.js","mappings":"mMAEe,SAASA,IACpB,OAAOC,EAAAA,EAAAA,KAACC,EAAAA,IAAU,GACtB,C","sources":["components/library/icons/download.js"],"sourcesContent":["import { HiDownload } from \"react-icons/hi\";\n\nexport default function DownloadIco() {\n    return <HiDownload />\n}"],"names":["DownloadIco","_jsx","HiDownload"],"sourceRoot":""}

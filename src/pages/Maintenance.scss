@@ -1,0 +1,29 @@
+@use "../styles/variables.scss";
+@import "../styles/responsive.scss";
+
+.maintenance-page {
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  svg {
+    padding: 0px !important;
+  }
+  rect,
+  path {
+    fill: variables.$septenary;
+  }
+
+  .darkmode {
+    padding: 1rem;
+    text-align: right;
+    right: 0;
+  }
+
+  .header {
+    flex-grow: 1;
+  }
+  .footer {
+    flex-grow: 0;
+  }
+}

@@ -1,0 +1,179 @@
+{
+    "section": {
+        "cinema" : [
+            {
+                "id": 0,
+                "title": "Primes.The trap of Riemann",
+                "role": "Director, DOP, Camera operator, Post production",
+                "duration": "Spring 2014",
+                "description":
+                  "Primes. The Trap of Riemann è un progetto cinematografico crowdfunding nato dall'idea e dalla sceneggiatura di Claudio Pagnacco e Alessandro Carnevale.",
+                "url": "https://www.youtube.com/embed/jAYxW_ggXLQ",
+                "type": "youtube",
+                "backgroundColor": "#698583",
+                "cover": "/uploads/Video_primes_a370c22637.jpg",
+                "thumb": "/uploads/Slide_16_9_primes_e8fff3ee47.jpg"
+              },
+              {
+                "id": 1,
+                "title": "Sorelle di corpo",
+                "role": "Camera operator, Drone operator, Post production",
+                "duration": "Summer 2017",
+                "description":
+                  "Le ragazze partecipanti al progetto 'Sorelle di corpo' si raccontano in una serie di interviste. \n Valentina le immortalerà nei suoi scatti e si aprirà con loro condividendo la sua storia.",
+                "url": "https://www.youtube.com/embed/YqG4OZdYov8",
+                "type": "youtube",
+                "backgroundColor": "#cea7a4",
+                "cover": "/uploads/Video_198102e64b.jpg",
+                "thumb": "/uploads/Slide_16_9_2_ba22343c35.jpg"
+              },
+              {
+                "id": 2,
+                "title": "Absence Atlas",
+                "role": "Director, DOP, Camera operator, Post production",
+                "duration": "Summer 2017",
+                "description":
+                  "L'archeologia industriale raccontata attraverso le opere e la quotidinaità dell'artista Alessandro Carnevale.",
+                "url": "https://www.youtube.com/embed/1LlIsDcWpjE",
+                "type": "youtube",
+                "backgroundColor": "#6b6b85",
+                "cover": "/uploads/cove2_c5349c7a9c.jpg",
+                "thumb": "/uploads/thumb2_61e265789e.jpg"
+              },
+              {
+                "id": 3,
+                "title": "Aria (trailer)",
+                "role": "Director, Drone operator, Post production",
+                "duration": "Coming Soon (Summer 2023)",
+                "description": "Aria si compone di una raccolta di storie e immagini del nostro mondo, che offrono la possibilità di immergersi nel cuore di quello che viviamo. \n",
+                "url": "https://www.youtube.com/embed/NyNiglQRJYg",
+                "type": "youtube",
+                "backgroundColor": "#7d6985",
+                "cover": "/uploads/Video1_2a6c2836eb.jpg",
+                "thumb": "/uploads/thumb1_dfda581a4d.jpg"
+              }
+        ],
+        "fotografia" :[
+            {
+                "id": 1,
+                "url": "https://www.instagram.com/p/CGXT19WjVT6/",
+                "type": "img",
+                "src": "/uploads/1_5601c32c2a.jpg"
+              },
+              {
+                "id": 2,
+                "url": "https://www.instagram.com/p/CUA7_xSNp14/",
+                "type": "img",
+                "src": "/uploads/2_be96e94755.webp"
+              },
+              {
+                "id": 3,
+                "url": "https://www.instagram.com/p/B9mmPmfHfFa/",
+                "type": "img",
+                "src": "/uploads/3_3204fff9e4.jpg"
+              },
+              {
+                "id": 4,
+                "url": "https://www.instagram.com/p/CHSlXAyjzSL/",
+                "type": "img",
+                "src": "/uploads/4_e5c409331a.jpg"
+              },
+              {
+                "id": 5,
+                "url": "https://www.instagram.com/p/CBF8Gtxj4_e/",
+                "type": "img",
+                "src": "/uploads/5_b91bb2da53.jpg"
+              },
+              {
+                "id": 6,
+                "url": "https://www.instagram.com/p/CH5OA8EDHwV/",
+                "type": "img",
+                "src": "/uploads/6_1635f69e6b.jpg"
+              },
+              {
+                "id": 7,
+                "url": "https://www.instagram.com/p/CIqLIwXjFoj/",
+                "type": "img",
+                "src": "/uploads/7_71411042ea.jpg"
+              },
+              {
+                "id": 8,
+                "url": "https://www.instagram.com/p/B-AIsWvDcqG/",
+                "type": "img",
+                "src": "/uploads/8_8d071b37ac.jpg"
+              },
+              {
+                "id": 9,
+                "url": "https://www.instagram.com/p/B_CqfBaDSI1/",
+                "type": "img",
+                "src": "/uploads/9_7d19ad36b8.jpg"
+              },
+              {
+                "id": 10,
+                "url": "https://www.instagram.com/p/CLZQvppjSUH/",
+                "type": "img",
+                "src": "/uploads/10_a735cd593e.jpg"
+              },
+              {
+                "id": 11,
+                "url": "https://www.instagram.com/p/BoPU0mPHkPX/",
+                "type": "img",
+                "src": "/uploads/11_1fd91715a2.jpg"
+              },
+              {
+                "id": 12,
+                "url": "https://www.instagram.com/p/BnmLmKMH0bK/",
+                "type": "img",
+                "src": "/uploads/12_9657a022f7.jpg"
+              },
+              {
+                "id": 13,
+                "url": "https://www.instagram.com/p/B86QyUxHVBw/",
+                "type": "img",
+                "src": "/uploads/13_ab91aa223e.jpg"
+              },
+              {
+                "id": 14,
+                "url": "https://www.instagram.com/p/B4SAwEiHNG1/",
+                "type": "img",
+                "src": "/uploads/14_be22acae2e.jpg"
+              },
+              {
+                "id": 15,
+                "url": "https://www.instagram.com/p/BnUOI86H9Xu/",
+                "type": "img",
+                "src": "/uploads/15_59189507f4.jpg"
+              },
+              {
+                "id": 16,
+                "url": "https://www.instagram.com/p/CTRzjSksuy8/",
+                "type": "img",
+                "src": "/uploads/16_27ba4d323e.jpg"
+              },
+              {
+                "id": 17,
+                "url": "https://www.instagram.com/p/CGNhCVvD1ic/",
+                "type": "img",
+                "src": "/uploads/17_3be8922c0f.jpg"
+              },
+              {
+                "id": 18,
+                "url": "https://www.instagram.com/p/BoZhxP_nV01/",
+                "type": "img",
+                "src": "/uploads/18_0ebfd130f2.jpg"
+              },
+              {
+                "id": 19,
+                "url": "https://www.instagram.com/p/CM18g_aDytl/",
+                "type": "img",
+                "src": "/uploads/19_32c73c59b2.jpg"
+              },
+              {
+                "id": 20,
+                "url": "https://www.instagram.com/p/CAqDglQDdRC/",
+                "type": "img",
+                "src": "/uploads/20_81a4e8ae45.jpg"
+              }
+        ]
+    }
+}

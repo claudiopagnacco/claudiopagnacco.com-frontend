@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/444.5d699b8f.chunk.js","mappings":"kMAEe,SAASA,IACtB,OAAOC,EAAAA,EAAAA,KAACC,EAAAA,IAAY,GACtB,C","sources":["components/library/icons/up.js"],"sourcesContent":["import { IoIosArrowUp } from \"react-icons/io\";\n\nexport default function UpIco() {\n  return <IoIosArrowUp />;\n}\n"],"names":["UpIco","_jsx","IoIosArrowUp"],"sourceRoot":""}

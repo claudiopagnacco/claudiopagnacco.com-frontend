@@ -1,0 +1,200 @@
+@use "sass:math";
+
+$breakpoints: (
+  "xs": 0,
+  "s": 576px,
+  "m": 768px,
+  "l": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+) !default;
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+.view-from-xs {
+  display: none;
+  @include respond-to("xs") {
+    display: initial;
+  }
+}
+.view-from-s {
+  display: none;
+  @include respond-to("s") {
+    display: initial;
+  }
+}
+.view-from-m {
+  display: none;
+  @include respond-to("m") {
+    display: initial;
+  }
+}
+.view-from-l {
+  display: none;
+  @include respond-to("l") {
+    display: initial;
+  }
+}
+.view-from-xl {
+  display: none;
+  @include respond-to("xl") {
+    display: initial;
+  }
+}
+.view-from-xxl {
+  display: none;
+  @include respond-to("xxl") {
+    display: initial;
+  }
+}
+
+$grid-colums: 12;
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  @include respond-to("xs") {
+    min-width: 360px;
+    max-width: 100vw;
+  }
+  @include respond-to("s") {
+    max-width: 95%;
+    margin: auto;
+  }
+  @include respond-to("m") {
+    max-width: 90%;
+  }
+  @include respond-to("l") {
+    max-width: 85%;
+  }
+  @include respond-to("xl") {
+    max-width: 80%;
+  }
+  @include respond-to("xxl") {
+    max-width: 1200px;
+  }
+}
+
+.row {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  position:relative;
+}
+
+[class*="col-"] {
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+
+.row > div[class*="col-"] {
+  padding: 0.5rem 0;
+  @include respond-to("s") {
+    padding: 0 0.5rem;
+  }
+}
+
+.row > div:first-child {
+  padding-left:0;
+}
+.row > div:last-child {
+  padding-right:0;
+}
+
+@include respond-to("xs") {
+  @for $i from 1 through $grid-colums {
+    .col-#{$i}-xs {
+      width: math.div($i * 100%, $grid-colums);
+      max-width: math.div($i * 100%, $grid-colums);
+    }
+  }
+}
+@include respond-to("s") {
+  @for $i from 1 through $grid-colums {
+    .col-#{$i}-s {
+      width: math.div($i * 100%, $grid-colums);
+      max-width: math.div($i * 100%, $grid-colums);
+    }
+  }
+}
+@include respond-to("m") {
+  @for $i from 1 through $grid-colums {
+    .col-#{$i}-m {
+      width: math.div($i * 100%, $grid-colums);
+      max-width: math.div($i * 100%, $grid-colums);
+    }
+  }
+}
+@include respond-to("l") {
+  @for $i from 1 through $grid-colums {
+    .col-#{$i}-l {
+      width: math.div($i * 100%, $grid-colums);
+      max-width: math.div($i * 100%, $grid-colums);
+    }
+  }
+}
+@include respond-to("xl") {
+  @for $i from 1 through $grid-colums {
+    .col-#{$i}-xl {
+      width: math.div($i * 100%, $grid-colums);
+      max-width: math.div($i * 100%, $grid-colums);
+    }
+  }
+}
+@include respond-to("xxl") {
+  @for $i from 1 through $grid-colums {
+    .col-#{$i}-xxl {
+      width: math.div($i * 100%, $grid-colums);
+      max-width: math.div($i * 100%, $grid-colums);
+    }
+  }
+}
+
+.flex-right {
+  position:absolute;
+  right:0;
+}
+
+.flex-left {
+    position:absolute;
+    left:0;
+  }
+
+  .auto-align{
+    @include respond-to("xs") {
+      text-align: center;
+    }
+    @include respond-to("s") {
+      text-align: unset;
+    }
+    @include respond-to("m") {
+      text-align: unset;
+    }
+  }
+
+  .button-100{
+    label {
+      @include respond-to("xs") {
+        width: 100%;
+      }
+      @include respond-to("s") {
+        width: auto;
+      }
+      @include respond-to("m") {
+        width: auto;
+      }
+    }
+  }

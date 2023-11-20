@@ -1,0 +1,54 @@
+@use "../styles/variables.scss";
+@import "../styles/responsive.scss";
+
+@keyframes Highlight {
+  0% {
+    left: 0px;
+    right: unset;
+    width: 0%;
+    background-color: variables.$accent;
+    transform: skew(-2deg, -2deg);
+  }
+  50% {
+    left: 0px;
+    right: unset;
+    width: 100%;
+    background-color: variables.$blue;
+  }
+  51% {
+    left: unset;
+    right: 0px;
+    width: 100%;
+  }
+  100% {
+    left: unset;
+    right: 0px;
+    width: 0%;
+    background-color: variables.$pink;
+    transform: skew(2deg, 2deg);
+  }
+}
+
+.design-page {
+    h2 {
+        margin: auto;
+      }
+    
+      h3 {
+        font-size: 1.5rem;
+      }
+  h2 {
+    position: relative;
+    div {
+      display: block;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      animation: Highlight 1.3s ease-in-out;
+      animation-delay: 0.1s;
+      opacity: 0.5;
+      border-radius: 1rem;
+    }
+  }
+}

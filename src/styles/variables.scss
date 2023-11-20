@@ -1,0 +1,130 @@
+//Font Poppins 400, 500, 600, 700, 800
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+//Font Nunito 400, 500, 600, 700, 800
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+$font: "Poppins", sans-serif;
+$font2: 'Nunito', sans-serif;
+
+// * values
+$transition: 0.3s ease-in-out;
+
+// Colors theme
+:root {
+  --primary: rgba(15, 51, 81, 1);
+  --primary-15: rgba(15, 51, 81, 0.15);
+  --primary-25: rgba(15, 51, 81,0.25);
+  --secondary: rgb(142, 142, 147);
+  --tertiary: rgb(174, 174, 178);
+  --quaternary: rgb(199, 199, 204);
+  --quinary: rgb(209, 209, 214);
+  --senary: rgb(229, 229, 234);
+  --septenary: rgb(242, 242, 247);
+  --background: rgb(255, 255, 255);
+  --background-15: rgba(255, 255, 255, 0.15);
+  --background-50: rgba(255, 255, 255, 0.5);
+  --background-80: rgba(255, 255, 255, 0.8);
+  --cinema-foreground: rgba(236, 221, 215, 1);
+
+  --blue: rgb(0, 122, 255);
+  // --indigo: rgb(88, 86, 214);
+  --indigo: #3734CE;
+  --purple: rgb(175, 82, 222);
+  --pink: rgb(255, 45, 85);
+  --green: rgb(52, 199, 89);
+  --yellow: rgb(255, 204, 0);
+  --orange: rgb(255, 149, 0);
+  --red: rgb(255, 59, 48);
+
+  --accent: #3734CE;
+  --fixed-accent: #3734CE;
+  --accent-10: rgba(88, 86, 214, 0.1);
+  --accent-50: rgba(88, 86, 214, 0.5);
+
+  --light-yellow: #FFFADB;
+  --light-indigo: #E7E7F9;
+  --light-blue: #DBECFF;
+  --light-pink: #FFE1E7;
+  --light-purple: #F6E7FD;
+  --light-green: #E2F9E5;
+}
+[data-theme="dark"] {
+  --primary: rgb(255, 255, 255);
+  --primary-15: rgba(255, 255, 255, 0.15);
+  --primary-25: rgba(255, 255, 255, 0.25);
+  --secondary: rgb(142, 142, 147);
+  --tertiary: rgb(99, 99, 102);
+  --quaternary: rgb(72, 72, 74);
+  --quinary: rgb(58, 58, 60);
+  --senary: rgb(48, 48, 46);
+  --septenary: rgb(28, 28, 30);
+  --background: rgb(0, 0, 0);
+  --background-15: rgba(0, 0, 0, 0.15);
+  --background-50: rgba(0, 0, 0, 0.5);
+  --background-80: rgba(0, 0, 0, 0.8);
+  --cinema-foreground: rgba(72, 61, 57, 1);
+
+  --blue: rgb(10, 132, 255);
+  //--indigo: rgb(94, 92, 230);
+  --indigo: #B2B1EC;
+  --purple: rgb(191, 90, 242);
+  --pink: rgb(255, 45, 85);
+  --green: rgb(50, 215, 75);
+  --yellow: rgb(255, 214, 10);
+  --orange: rgb(255, 159, 10);
+  --red: rgb(255, 69, 58);
+  
+  --accent: #B2B1EC;
+  --fixed-accent: #3734CE;
+  --accent-10: rgba(94, 92, 230, 0.1);
+  --accent-50: rgba(94, 92, 230, 0.5);
+
+  --light-yellow: #372E00;
+  --light-indigo: #0D0D34;
+  --light-blue: #001224;
+  --light-pink: #2B0008;
+  --light-purple: #1E042C;
+  --light-green: #06200A;
+}
+$primary: var(--primary);
+$primary-15: var(--primary-15);
+$primary-25: var(--primary-25);
+$secondary: var(--secondary);
+$tertiary: var(--tertiary);
+$quaternary: var(--quaternary);
+$quinary: var(--quinary);
+$senary: var(--senary);
+$septenary: var(--septenary);
+$background: var(--background);
+$background-15: var(--background-15);
+$background-50: var(--background-50);
+$background-80: var(--background-80);
+$cinema-foreground: var(--cinema-foreground);
+$blue: var(--blue);
+$indigo: var(--indigo);
+$purple: var(--purple);
+$pink: var(--pink);
+$green: var(--green);
+$yellow: var(--yellow);
+$orange: var(--orange);
+$red: var(--red);
+$accent: var(--accent);
+$fixed-accent: var(--fixed-accent);
+$accent-10: var(--accent-10);
+$accent-50: var(--accent-50);
+$light-yellow: var(--light-yellow);
+$light-indigo: var(--light-indigo);
+$light-blue: var(--light-blue);
+$light-pink: var(--light-pink);
+$light-purple: var(--light-purple);
+$light-green: var(--light-green);
+
+// Corner values
+$radius: 2.2rem;
+$smallRadius: 1.5rem;
+$rounded: 100px;
+$circle: 100%;
+
+// Input values
+$inputHeight: 35px;
